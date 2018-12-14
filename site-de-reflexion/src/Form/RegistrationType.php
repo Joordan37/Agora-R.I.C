@@ -18,7 +18,7 @@ class RegistrationType extends AbstractType
             ->add('email')
             ->add('password', RepeatedType::class, array(
                 'type' => PasswordType::class,
-                'invalid_message' => 'The password fields must match.',
+                'invalid_message' => 'Le mot de passe est différent, veuillez réesayer',
                 'options' => array('attr' => array('class' => 'password-field')),
                 'required' => true,
                 'first_options'  => array('label' => 'Mot de passe'),

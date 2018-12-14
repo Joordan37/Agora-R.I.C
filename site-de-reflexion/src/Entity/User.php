@@ -77,7 +77,7 @@ class User implements UserInterface
 
     public function setEmail(string $email): self
     {
-        $this->username = $email;
+        $this->email= $email;
 
         return $this;
     }
